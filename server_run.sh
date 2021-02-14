@@ -1,5 +1,5 @@
 cd backend
-sudo su -postgres
+sudo -i -u postgres
 psql
 CREATE DATABASE Xmeme;
 CREATE TABLE public.memes2
