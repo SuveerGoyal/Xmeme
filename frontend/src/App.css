@@ -1,0 +1,21 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New",Courier,monospace;
+  background: linear-gradient( to right, #CE9FFC 10%, #7367F0 100%);
+
+}
+
+
+.mainElement{
+  display:flex;
+  flex-direction: column;
+}
+
+.heading{
+  text-align: center;
+}
