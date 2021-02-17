@@ -1,4 +1,5 @@
 cd backend
+sudo -u postgres psql -U postgres -d postgres -c "alter user postgres with password 'test';"
 sudo -u postgres psql -c 'CREATE DATABASE xmeme;'
 sudo -u postgres psql -d 'xmeme' << EOF
 CREATE TABLE memes
