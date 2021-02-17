@@ -3,7 +3,7 @@ sudo -u postgres psql -c 'CREATE DATABASE xmeme;'
 sudo -u postgres psql -d 'xmeme' << EOF
 CREATE TABLE memes
 (
-    id integer SERIAL PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     name text NOT NULL,
     url text NOT NULL,
     caption text NOT NULL,
