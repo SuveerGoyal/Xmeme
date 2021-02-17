@@ -1,14 +1,12 @@
 cd backend
-echo 'export PATH=$PATH:/usr/local/bin' >> $HOME/.bashrc
 sudo -u postgres psql -c 'CREATE DATABASE xmeme;'
 sudo -u postgres psql -d 'xmeme' << EOF
 CREATE TABLE memes
 (
-    id integer NOT NULL GENERATED ALWAYS AS IDENTITY ( INCREMENT 1 START 1 MINVALUE 1 ),
+    id integer SERIAL PRIMARY KEY,
     name text NOT NULL,
     url text NOT NULL,
     caption text NOT NULL,
-    PRIMARY KEY (id),
     UNIQUE (name, url, caption)
 );
 EOF
