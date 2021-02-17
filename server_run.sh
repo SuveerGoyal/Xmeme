@@ -10,6 +10,5 @@ CREATE TABLE memes
     UNIQUE (name, url, caption)
 );
 EOF
-sudo -u postgres psql -U postgres -d postgres -c "alter user postgres with password 'test';"
 npm install
 npm start
